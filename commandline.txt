@@ -1,0 +1,2 @@
+F:\selenium code\AutomationExercise>java -cp "F:\selenium jar\selenium-2.48.2\li
+bs\*"; "F:\selenium code\AutomationExercise\" org.testng.TestNG testng.xml
