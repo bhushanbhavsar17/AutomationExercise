@@ -98,5 +98,12 @@ public class eBayHomePage {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
+	
+	 public void getscreenshot() throws Exception 
+     {
+             File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+          
+             FileUtils.copyFile(scrFile, new File("F:\\screenshot.png"));
+     }
 }
 

@@ -135,14 +135,9 @@ public class LoginApplication {
 			logger.log(LogStatus.PASS, "total value and price value are matching");
 			Assert.assertEquals(productName, finalTitle, "Product title are matching");
 			logger.log(LogStatus.PASS, "Product title are matching");
-			// File scrFile = ((TakesScreenshot)
-			// driver).getScreenshotAs(OutputType.FILE);
-			// timeStamp = new
-			// SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-			// screenShotName = new File("F:\\MyTest\\Screenshots\\" + timeStamp
-			// + ".png");
-			// FileUtils.copyFile(scrFile, screenShotName);
+		
 			logger.log(LogStatus.PASS, "Product Item verified");
+			hp.getscreenshot();
 			driver.close();
 		}
 
